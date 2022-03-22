@@ -1,2 +1,2 @@
-# portfolio
- My personal portfolio
+# foxl.design
+ My personal portfolio & contact website.
