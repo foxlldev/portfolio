@@ -1,9 +1,9 @@
 // Header
 
-window.onscroll = function() {myFunction()};
+window.onscroll = myFunction;
 
-var header = document.getElementById("header");
-var sticky = header.offsetTop;
+const header = document.getElementById("header");
+const sticky = header.offsetTop;
 
 function myFunction() {
   if (window.pageYOffset > sticky) {
