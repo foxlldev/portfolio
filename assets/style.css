@@ -3,187 +3,155 @@ body {
     margin:0;
 }
 html {
-    background-color: #1c1c1c;
+    background-color: #e7eff3;
 }
 
-/* Divs */
-.d-main {
-    margin: 20px;
-    border-radius: 15px;
-    background-color: rgba(0, 0, 0, 0.25);
-}
-
-/* Text */
-/*  Text Font */
-.tf-ptn {
-    font-family: 'Panton';
-}
-.tf-os {
-    font-family: 'Open Sans';
-}
-/* Text Weights */
-.tw-2 {
-    font-weight: 200;
-}
-.tw-3 {
-    font-weight: 300;
-}
-.tw-4 {
-    font-weight: 400;
-}
-.tw-5 {
-    font-weight: 500;
-}
-.tw-6 {
-    font-weight: 600;
-}
-/* Text Color */
-.tc-white {
-    color: white;
-}
-/* Text Size */
-.ts-1 {
-    font-size: 1em;
-}
-.ts-2 {
-    font-size: 2em;
-}
-.ts-3 {
-    font-size: 3em;
-}
-.ts-4 {
-    font-size: 4em;
-}
-.ts-5 {
-    font-size: 5em;
-}
-.ts-6 {
-    font-size: 6em;
-}
-/* Text Align */
-.ta-c {
-    text-align: center;
-}
-.ta-cc {
-    display: grid;
-    place-content: center;
-    place-items: center;
-}
-.ta-l {
-    text-align: left;
-}
-.ta-r {
-    text-align: right;
-}
-/* Text Deco */
-.td-nicebody {
-    color: rgb(160, 183, 209);
-}
-/* Links */
 a {
-    color: skyblue;
-    font-style: italic;
     text-decoration: none;
-    transition: 0.3s;
-}
-a:hover {
-    color: #c3ebfc;
-}
-
-/* Header */
-.header {
-    padding: 15px;
-    background: #111111;
-    color: white;
-    z-index: 2;
-}
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-
-/* Buttons */
-/* Buttons */
-button, a.btn {
-    text-decoration: none;
-    padding: 15px;
-    padding-left: 17px;
-    padding-right: 17px;
-    border-radius: 7px;
-    border-width: 2px;
-    border-style: solid;
-    transition: 0.3s;
-    font-family: 'Panton', sans-serif;
-    font-weight: 300;
-    font-size: 20px;
-    margin-bottom: 35px;
-}
-button.btn-one, a.btn-one {
-    color: rgb(200, 200, 200);
-    background: rgba(0,0,0,0.3);
-    border-color: rgb(31, 82, 133);
-    border-width: 2px;
-}
-button.btn-two, a.btn-two {
-    color: rgb(200, 200, 200);
-    background: rgba(0,0,0,0.3);
-    border-color: rgb(211, 142, 39);
-}
-button.btn-one:hover, a.btn-one:hover {
-    color: #fff;
-    background-color: rgb(31, 82, 133);
-    border-color: rgb(31, 82, 133);
-}
-button.btn-two:hover, a.btn-two:hover {
-    color: #fff;
-    background-color: rgb(211, 142, 39);
-    border-color: rgb(211, 142, 39);
-}
-a.btn {
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-}
-
-/* Work Section */
-.mwi {
-    height: 160px;
-    margin: 20px;
+    margin-left: 3px;
+    margin-right: 3px;
+    color: rgb(140, 0, 255);
     transition: 0.2s;
 }
-.mwi:hover {
+a:hover {
+    color: rgb(176, 80, 255);
+}
+
+#intro, #aboutme, #skillssummary, #projects {
+    color: rgb(20, 20, 22);
+    margin: 10px;
+}
+#intro {
+    background: #f6fafc;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pfp {
+    max-width: 200px;
+    width: 100%;
+    border-color: rgba(0, 0, 0, 0.15);
+    border-radius: 100%;
+    border-width: 2px;
+    border-style: solid;
+}
+.jnd {
+    margin-left: 30px;
+    font-size: 60px;
+    font-family: 'Helvetica Now', 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+}
+
+#aboutme {
+    background: #e8f6ff;
+    padding: 25px;
+    padding-top: 5px;
+
+    display: flexbox;
+    align-items: center;
+    justify-items: center;
+}
+.amt {
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 40px;
+    font-family: 'Helvetica Now', 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+.amd {
+    margin-left: 30px;
+    font-size: 18px;
+    font-family: 'Helvetica Now', 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+}
+
+#skillssummary {
+    background: #f0f5f8;
+    padding: 25px;
+    padding-top: 5px;
+
+    display: flexbox;
+    align-items: center;
+    justify-items: center;
+}
+.sst {
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 40px;
+    font-family: 'Helvetica Now', 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+.ssis {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.ssiw {
+    margin: 15px;
+    justify-content: center;
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Helvetica Now', 'Open Sans', Helvetica, Arial, sans-serif;
+}
+.ssi {
+    border-radius: 100%;
+    height: 105px;
+    width: 105px;
+    object-fit: contain;
+    background-color: rgb(230,230,230);
+}
+.ssi-uf {
+    height: 100px;
+    width: 100px;
+    padding: 5px;
+}
+
+#projects {
+    background: #f0f5f8;
+    padding: 25px;
+    padding-top: 5px;
+
+    display: flexbox;
+    align-items: center;
+    justify-items: center;
+}
+.pt {
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 40px;
+    font-family: 'Helvetica Now', 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+.pis {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.piw {
+    margin: 10px;
+    justify-content: center;
+}
+.pi {
+    height: 150px;
+    object-fit: contain;
+    background-color: rgb(230,230,230);
+    border-color: rgba(0, 0, 0, 0.15);
+    border-style: solid;
+    border-width: 3px;
+    transition: 0.2s;
+}
+.pi:hover {
     transform: scale(1.1);
 }
 
-/* Tooltips */
-.tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-}
-
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
+#footer {
     text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-    position: absolute;
-    z-index: 1;
-    font-size: 18px;
-    font-family: 'Quicksand';
-
-    width: 140px;
-    bottom: 105%;
-    left: 50%;
-    margin-left: -70px; /* Use half of the width (120/2 = 60), to center the tooltip */
+    padding: 10px;
+    color: rgb(225, 225, 225);
+    background: #111;
 }
-
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-}
-

@@ -1,72 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<meta charset="utf-8">
-		<title>foxl design</title>
-		<meta name="description" content="foxl.design offers web development & design, java app development and more.">
+		<title>Foxl Design</title>
+		<meta name="description" content="foxlldev's portfolio - foxl.design.">
 		<link rel="icon" type="image/png" sizes="750x750" href="./assets/icon.png">
 
 		<!-- Fonts -->
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:400,400i,500,500i,700,700i&amp;display=swap">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&amp;display=swap">
-		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"> 
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
-		<link href="https://fonts.cdnfonts.com/css/panton" rel="stylesheet">
-		<link href="https://fonts.cdnfonts.com/css/ubuntu" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
 		<!-- CSS -->
 		<link rel="stylesheet" href="./assets/style.css">
 
-		<!-- Header & Footer -->
-		<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
-		</script>
-		<!-- Defer the script to run it after page load -->
-		<script src="./assets/be.js" defer></script>
-
 		<!-- Discord -->
-		<meta content="foxl design" property="og:title">
-		<meta content="foxl.design offers web development & design, java app development and more." property="og:description">
+		<meta content="Foxl Design" property="og:title">
+		<meta content="foxlldev's portfolio - foxl.design." property="og:description">
 		<meta content="https://foxl.design" property="og:url">
 		<meta content="https://foxl.design/assets/icon.png" property="og:image">
 		<meta content="#3f6aaa" data-react-helmet="true" name="theme-color">
 	</head>
 	<body>
-		<div id="header" class="header">
-			<span style="margin:5px;margin-right:20px;"class="tf-ptn tw-5 ts-2"><a href="#" style="color:white;font-style:normal;">foxl.design</a></span>
-			<span style="margin:5px;margin-right:10px;"class="tf-ptn tw-5 ts-2"><a href="#work">My work</a></span>
-			<span style="margin:5px;"class="tf-ptn tw-5 ts-2"><a href="#contact">Contact</a></span>
+		<div id="intro">
+			<img class="pfp" src="./assets/pfp.png">
+			<span class="jnd">Just nice design.</span>
 		</div>
-		
-		<div id="top" class="d-main ta-cc tc-white" style="min-height: 350px; padding: 20px;">
-			<p class="tf-ptn ts-6 ta-c">DAMN THAT'S A NICE <span class="td-nicebody"><<span>body</span>></span></p>
-			<a class="btn btn-one" href="#work">VIEW WORK</a>
+		<div id="aboutme">
+			<p class="amt">ABOUT ME</p>
+			<p class="amd">
+				I'm a British developer and graphic designer.
+				I'm fluent in Electron, React, TailwindCSS, plain web design, NodeJS, Java and more.
+				<br>When I was about 10, I launched some app and then wondered how someone made it.
+				Then I thought, "Hey, why don't I try make one myself," not realising what I had just got myself into.
+				I made a really bad app in Visual Studio's visual app maker thingy.
+				I once thought making it in some non-visual way would suck, until I tried it and loved it.
+				<br>Four years later, I'm still making stuff for fun. I make websites, apps and games all the time.
+				My by far biggest project is <a href="https://withered.app">Withered Launcher</a>,
+				which is like Steam but with offline launch support, only a 5% or 10% cut of profits for paid games,
+				and without the $100/year fee that Steam charges you to publish your game there.
+			</p>
 		</div>
-		
-		<div id="work" class="d-main tc-white" style="min-height: 350px; padding: 20px;">
-			<p style="margin:0;" class="tf-os tw-6 ts-4">My work</p>
-			<div style="display: flex; justify-content: center; flex-wrap: wrap;">
-				<a class="tooltip" href="https://withered.io"><img class="mwi" src="./assets/mw1.png"><span class="tooltiptext">Withered.io</span></a>
-				<a class="tooltip" href="https://withered.io/hosting"><img class="mwi" src="./assets/mw2.png"><span class="tooltiptext">Withered.io hosting page</span></a>
-				<a class="tooltip" href="https://jellyclient.com"><img class="mwi" src="./assets/mw3.png"><span class="tooltiptext">JellyClient.com</span></a>
-				<a class="tooltip" href="https://jaam.tech"><img class="mwi" src="./assets/mw5.png"><span class="tooltiptext">JAAM.tech</span></a>
-				<a class="tooltip" href="https://withered.io/hub/"><img class="mwi" src="./assets/mw4.png"><span class="tooltiptext">Withered Hub app</span></a>
-			</div>
-			<div class="ta-c" style="margin: 15px;">
-				<p style="margin:5px;margin-bottom:35px;" class="tf-os tw-4 ts-3">Like what you see?</p>
-				<a class="btn btn-one" href="#contact">CONTACT</a>
+		<div id="skillssummary">
+			<p class="sst">SKILLS SUMMARY</p>
+			<div class="ssis">
+				<div class="ssiw">
+					<img class="ssi ssi-uf" src="https://logodix.com/logo/1844790.png">
+					<p>Electron</p>
+				</div>
+				<div class="ssiw">
+					<img class="ssi ssi-uf" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png">
+					<p>React</p>
+				</div>
+				<div class="ssiw">
+					<img class="ssi ssi-uf" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2048px-Tailwind_CSS_Logo.svg.png">
+					<p>TailwindCSS</p>
+				</div>
+				<div class="ssiw">
+					<img class="ssi ssi-uf" src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png">
+					<p>Plain HTML Design</p>
+				</div>
+				<div class="ssiw">
+					<img class="ssi ssi-uf" src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png">
+					<p>NodeJS</p>
+				</div>
+				<div class="ssiw">
+					<img class="ssi ssi-uf" src="http://assets.stickpng.com/images/58480979cef1014c0b5e4901.png">
+					<p>Java</p>
+				</div>
 			</div>
 		</div>
-		
-		<div id="contact" class="d-main tc-white" style="min-height: 350px; padding: 20px;">
-			<p style="margin:0;" class="tf-os tw-6 ts-4">Contact me</p>
-			<div>
-				<p style="margin:2px;" class="tf-os tw-5 ts-2">You can contact me via any of the options below...</p>
-				<p style="margin:2px;" class="tf-os tw-3 ts-2">Discord:</p>
-				<a href="https://wthrd.co/ff"><img style="margin-left: 15px; max-width: 98%;" src="https://discord.c99.nl/widget/theme-3/400680342136291329.png"></a>
-				<p style="margin:2px;" class="tf-os tw-3 ts-2">Email:</p>
-				<p style="margin:2px;margin-left:15px;" class="tf-os tw-3 ts-2"><a href="mailto:foxl@withered.app">foxl@withered.app</a></p>
+		<div id="projects">
+			<p class="pt">PROJECTS</p>
+			<div class="pis">
+				<div class="piw">
+					<a href="https://withered.app"><img class="pi" src="./assets/mw-withered_website.png"></a>
+				</div>
+				<div class="piw">
+					<a href="https://withered.app/downloads"><img class="pi" src="./assets/mw-withered_launcher.png"></a>
+				</div>
+				<div class="piw">
+					<a href="https://withered.app/store/untitledasteroidgame"><img class="pi" src="./assets/mw-untitled_asteroid_game.jpg"></a>
+				</div>
+				<div class="piw">
+					<a href="https://withered.app/store/foxlmp"><img class="pi" src="./assets/mw-foxlmp.png"></a>
+				</div>
+				<div class="piw">
+					<a href="https://jellyclient.com"><img class="pi" src="./assets/mw-jelly_client_website.png"></a>
+				</div>
 			</div>
+		</div>
+		<div id="footer">
+			© Copyright 2022 Foxl Design. All rights reserved. All trademarks are property of their respective owners in the US and other countries.
 		</div>
 	</body>
 </html>
