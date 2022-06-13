@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7api Presentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div id="slide-1" hidden>
+        <h1 id="title">7api:<br>
+            Tips and Element Data</h1>
+        <h2 id="subtitle">The 7api reader (in p5JS) requests its displayed data from the 7api backend (Javascript and Express).</h2>
+    </div>
+    <iframe id="slide-2" scrolling="no"></iframe>
+    <iframe id="slide-3" scrolling="no"></iframe>
+    <div id="slide-4" hidden>
+        help
+    </div>
+    <div id="footer">
+        <a id="hl" href="../../">Home</a>
+        <a id="bb" href="?pg=1"><</a>
+        <a id="nb" href="?pg=2">></a>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        var pg = urlParams.get('pg');
+        if (pg == "1" || pg == null) {
+            document.body.id = "bslide-1";
+            document.getElementById('slide-1').removeAttribute('hidden');
+            document.getElementById('bb').classList.add('a-disabled');
+            document.getElementById('bb').removeAttribute('href');
+            document.getElementById('nb').href = "?pg=2";
+        } else if (pg == "2") {
+            document.body.id = "bslide-2";
+            document.getElementById('slide-2').removeAttribute('hidden');
+            document.getElementById('nb').href = "?pg=3";
+            document.getElementById('bb').href = "?pg=1";
+            document.getElementById('slide-2').src = "./frontend.html";
+        } else if (pg == "3") {
+            document.body.id = "bslide-3";
+            document.getElementById('slide-3').removeAttribute('hidden');
+            document.getElementById('nb').href = "?pg=4";
+            document.getElementById('bb').href = "?pg=2";
+            document.getElementById('slide-2').src = "./backend.html";
+        } else if (pg == "4") {
+            document.body.id = "bslide-4";
+            document.getElementById('slide-4').removeAttribute('hidden');
+            document.getElementById('nb').classList.add('a-disabled');
+            document.getElementById('nb').removeAttribute('href');
+            document.getElementById('bb').href = "?pg=3";
+        }
+    </script>
+
+    <style>
+        #bslide-1 {
+            color: white;
+            height: 100%;
+            background-image: linear-gradient(to bottom right, rgb(47, 85, 168), rgb(105, 31, 128));
+            background-position:center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        #bslide-2 {
+
+        }
+        #slide-2, #slide-3 {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            border-width: 0;
+        }
+        #title {
+            margin: 40px;
+            font-size: 72px;
+            font-family: Raleway, 'Open Sans', Helvetica, Arial, sans-serif;
+        }
+        #subtitle {
+            font-size: 32px;
+            margin-left: 40px;
+            margin-right: 40px;
+            margin-top: 10px;
+        }
+        html, body {
+            margin: 0;
+            overflow: hidden;
+            height: 100%;
+            font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+        }
+        a {
+            text-decoration: none;
+            display: inline-block;
+            transition: 0.2s;
+            padding: 3px;
+            border-radius: 3px;
+            color: skyblue;
+        }
+        a.a-disabled {
+            color: #777;
+        }
+        a.a-disabled:hover {
+            color: #777;
+            background: transparent;
+            transform: translateY(0px);
+        }
+        a:hover {
+            color: white;
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+        .t3d:hover {
+            transform: perspective(999px) rotateX(7deg) translate3d(0px, -4px, 5px);
+        }
+        #hl {margin-right: 20px;}
+        #footer {
+            left: 0;
+            width: 100%;
+            background: #222;
+            position: fixed;
+            bottom: 0;
+            padding: 10px;
+        }
+    </style>
+</body>
+</html>
