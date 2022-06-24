@@ -24,9 +24,9 @@ a:hover {
 #intro {
     background: #f6fafc;
     padding: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    place-items: center;
+    text-align: center;
 }
 
 .pfp {
@@ -38,10 +38,19 @@ a:hover {
     border-style: solid;
 }
 .jnd {
-    margin-left: 30px;
-    font-size: 60px;
+    margin: 5px;
+    font-size: 35px;
     font-family: 'Helvetica Now', 'Open Sans', Helvetica, Arial, sans-serif;
     font-weight: 600;
+}
+.jnd-cl {
+    color: rgb(235, 152, 0);
+}
+.jndst {
+    margin: 5px;
+    font-size: 25px;
+    font-family: 'Helvetica Now', 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: 400;
 }
 
 #aboutme {
@@ -169,7 +178,6 @@ a:hover {
 }
 .ct {
     margin-top: 20px;
-    margin-left: 30px;
     font-size: 40px;
     font-family: 'Helvetica Now', 'Open Sans', Helvetica, Arial, sans-serif;
     font-weight: 600;
@@ -189,8 +197,10 @@ a:hover {
     margin-bottom: 5px;
     margin-left: 5px;
     margin-right: 5px;
+    transition: 0.2s;
 }
 .cp-d-ins {
+    transition: 0.2s;
     border-radius: 5px;
     background-color:#2C2F33;
     color: white;
@@ -198,12 +208,16 @@ a:hover {
     align-items: center;
     justify-content: center;
     width: 395px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     margin-left: 5px;
     margin-right: 5px;
     padding-top: 15px;
     padding-bottom: 15px;
     font-family: 'Helvetica Now', 'Open Sans', Helvetica, Arial, sans-serif;
+}
+.cp-d-ins:hover, .cp-i-ins:hover {
+    color: skyblue;
+    transform: perspective(999px) rotateX(3deg) translate3d(0px, -3px, 3px) scale(1.0025);
 }
 .cp-d-ins-tl {
     margin-left: 15px;
