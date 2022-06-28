@@ -41,21 +41,21 @@
             document.getElementById('nb').href = "?pg=2";
         } else if (pg == "2") {
             document.body.id = "bslide-2";
-            document.getElementById('slide-1').addAttribute('hidden');
+            document.getElementById('slide-1').setAttribute('hidden');
             document.getElementById('slide-2').removeAttribute('hidden');
             document.getElementById('nb').href = "?pg=3";
             document.getElementById('bb').href = "?pg=1";
             document.getElementById('slide-2').src = "./frontend.html";
         } else if (pg == "3") {
             document.body.id = "bslide-3";
-            document.getElementById('slide-2').addAttribute('hidden');
+            document.getElementById('slide-2').setAttribute('hidden');
             document.getElementById('slide-3').removeAttribute('hidden');
             document.getElementById('nb').href = "?pg=4";
             document.getElementById('bb').href = "?pg=2";
             document.getElementById('slide-2').src = "./backend.html";
         } else if (pg == "4") {
             document.body.id = "bslide-4";
-            document.getElementById('slide-3').addAttribute('hidden');
+            document.getElementById('slide-3').setAttribute('hidden');
             document.getElementById('slide-4').removeAttribute('hidden');
             document.getElementById('nb').classList.add('a-disabled');
             document.getElementById('nb').removeAttribute('href');
