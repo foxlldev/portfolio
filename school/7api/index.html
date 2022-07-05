@@ -22,7 +22,8 @@
     <iframe id="slide-2" scrolling="no"></iframe>
     <iframe id="slide-3" scrolling="no"></iframe>
     <div id="slide-4" hidden>
-        help
+        <h1 id="title">That's all</h1>
+        <h2 id="subtitle">Thank you for viewing this little project of mine, if you want you can <a href="https://github.com/foxlldev/portfolio/tree/main/school/7api">star it on GitHub here</a>.</h2>
     </div>
     <div id="footer">
         <a id="hl" href="../../">Home</a>
@@ -41,18 +42,21 @@
             document.getElementById('nb').href = "?pg=2";
         } else if (pg == "2") {
             document.body.id = "bslide-2";
+            document.getElementById('slide-1').hidden = true;
             document.getElementById('slide-2').removeAttribute('hidden');
             document.getElementById('nb').href = "?pg=3";
             document.getElementById('bb').href = "?pg=1";
             document.getElementById('slide-2').src = "./frontend.html";
         } else if (pg == "3") {
             document.body.id = "bslide-3";
+            document.getElementById('slide-2').hidden = true;
             document.getElementById('slide-3').removeAttribute('hidden');
             document.getElementById('nb').href = "?pg=4";
             document.getElementById('bb').href = "?pg=2";
-            document.getElementById('slide-2').src = "./backend.html";
+            document.getElementById('slide-3').src = "./backend.html";
         } else if (pg == "4") {
             document.body.id = "bslide-4";
+            document.getElementById('slide-3').hidden = true;
             document.getElementById('slide-4').removeAttribute('hidden');
             document.getElementById('nb').classList.add('a-disabled');
             document.getElementById('nb').removeAttribute('href');
@@ -61,7 +65,9 @@
     </script>
 
     <style>
-        #bslide-1 {
+        a {color:skyblue;transition:0.3s;}
+        a:hover {color:lightpurple;transform:translateY(-2px);}
+        #bslide-1, #bslide-4 {
             color: white;
             height: 100%;
             background-image: linear-gradient(to bottom right, rgb(47, 85, 168), rgb(105, 31, 128));
@@ -69,6 +75,7 @@
             background-size: cover;
             background-repeat: no-repeat;
         }
+        #slide-4 {position:fixed;top:0;}
         #bslide-2 {
 
         }
